@@ -54,7 +54,9 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+type 1 slowly changing dimension is the one where old data is overwritten with the new data. There is no record or history of old data that's why the reports generated with this architecture shows NULL or wrong values sometimes.
+type 2 slowly changing dimesion architecture keeps the historical data and enables tracking changes in dimension data over time by adding a new row for each change in the table.
+The two images of customer table depicts the type 1 and type 2 SCD architecture.
 ```
 
 ***
